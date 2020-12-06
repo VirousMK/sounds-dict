@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Словарь японских звуков</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="input-container  ma">
+	<span class="kana-radio-table br" data-radio-type="kana"><!-- 
+  --><input class="hidden" type="radio" id="tab-k1" name="kana-tab-group" data-kana="hk" checked/><!-- 
+	--><label for="tab-k1" class="tab-title  inline-block">あ | ア</label><!-- 
+	--><input class="hidden" type="radio" id="tab-k2" name="kana-tab-group" data-kana="h"/><!-- 
+	--><label for="tab-k2" class="tab-title  inline-block">あ</label><!-- 
+	--><input class="hidden" type="radio" id="tab-k3" name="kana-tab-group" data-kana="k"/><!-- 
+	--><label for="tab-k3" class="tab-title  inline-block">ア</label><!-- 
+--></span><!-- 
+
+--><span class="transliteration-radio-table" data-radio-type="transliteration"><!-- 
+  --><input class="hidden" type="radio" id="tab-t1" name="transliteration-tab-group" data-transliteration="h" checked/><!-- 
+	--><label for="tab-t1" class="tab-title  inline-block">Хэпбёрн</label><!-- 
+	--><input class="hidden" type="radio" id="tab-t2" name="transliteration-tab-group" data-transliteration="p"/><!-- 
+	--><label for="tab-t2" class="tab-title  inline-block">Поливанов</label><!-- 
+	--><input class="hidden" type="radio" id="tab-t3" name="transliteration-tab-group" data-transliteration="n"/><!-- 
+	--><label for="tab-t3" class="tab-title  inline-block">скрыть</label><!-- 
+--></span>
+
+	<div class="input-table  flex t-center" data-kana="hk" data-transliteration="h"></div>
+
+	<div class="input-radio-container  flex w100p">
+		<input class="input" type="text" placeholder="Достаточно начать вводить…">
+		<button class="input-clear">Очистить</button>
+		<span class="input-radio-table" data-radio-type="input"><!-- 
+	 --><input class="hidden" type="radio" id="tab-i1" name="input-tab-group" data-input="h" checked/><!-- 
+	 --><label for="tab-i1" class="tab-title  inline-block">あ</label><!-- 
+	 --><input class="hidden" type="radio" id="tab-i2" name="input-tab-group" data-input="k"/><!-- 
+	 --><label for="tab-i2" class="tab-title  inline-block">ア</label>
+		</span>
+	</div>
+</div>
+
+<div class="results  flex">
+	<div class="results-container"></div>
+	<div class="result result-head  grid bgc-first t-center bold">
+		<div class="kana  flex br">
+			Кана
+		</div>
+		<div class="translate  flex br">
+			Варианты перевода
+		</div>
+		<div class="meaning1  flex br">
+			Примерное значение
+		</div>
+		<div class="meaning2  flex">
+			Уточнённое значение
+		</div>
+	</div>
+</div>
+
+</body>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/cookies.js"></script>
+	<script src="js/sounds.js"></script>
+	<script src="js/sims.js"></script>
+	<script src="js/js.js"></script>
+</html>
+
